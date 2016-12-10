@@ -31,7 +31,7 @@ package lyra2rev2
 import (
 	"github.com/aead/skein"
 	"github.com/dchest/blake256"
-	"github.com/utamaro/lyra2rev2/sha3"
+	"github.com/bitgoin/lyra2rev2/sha3"
 )
 
 //Sum returns the result of Lyra2re2 hash.
