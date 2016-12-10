@@ -1,5 +1,5 @@
-[![GoDoc](https://godoc.org/github.com/utamaro/lyra2rev2?status.svg)](https://godoc.org/github.com/utamaro/lyra2rev2)
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/utamaro/lyra2rev2/LICENSE)
+[![GoDoc](https://godoc.org/github.com/bitgoin/lyra2rev2?status.svg)](https://godoc.org/github.com/bitgoin/lyra2rev2)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/bitgoin/lyra2rev2/LICENSE)
 
 
 # lyra2rev2 with bmw,cubuhash, and lyra2 
@@ -21,7 +21,7 @@ This requires
 
 ## Installation
 
-     $ go get github.com/utamaro/lyra2rev2
+     $ go get github.com/bitgoin/lyra2rev2
 
 
 ## Example
