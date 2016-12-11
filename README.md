@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/bitgoin/lyra2rev2.svg?branch=master)](https://travis-ci.org/bitgoin/lyra2rev2)
 [![GoDoc](https://godoc.org/github.com/bitgoin/lyra2rev2?status.svg)](https://godoc.org/github.com/bitgoin/lyra2rev2)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/bitgoin/lyra2rev2/LICENSE)
 
