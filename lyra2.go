@@ -461,7 +461,7 @@ func lyra2(k []byte, pwd []byte, salt []byte, timeCost uint64, nRows int, nCols 
 	step := 1             //Visitation step (used during Setup and Wandering phases)
 	var window uint64 = 2 //Visitation window (used to define which rows can be revisited during Setup)
 	var gap uint64 = 1    //Modifier to the step, assuming the values 1 or -1
-	i := 0                //auxiliary iteration counter
+	var i int             //auxiliary iteration counter
 	//==========================================================================/
 
 	//========== Initializing the Memory Matrix and pointers to it =============//
