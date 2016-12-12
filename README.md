@@ -30,7 +30,7 @@ This requires
 
 ```go
 
-import lyra2rev2
+import "github.com/bitgoin/lyra2rev2"
 
 func main(){
     data := []byte{0x01,0x02}
