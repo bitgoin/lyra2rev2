@@ -574,7 +574,7 @@ func lyra2(k []byte, pwd []byte, salt []byte, timeCost uint64, nRows int, nCols 
 			//Selects a pseudorandom index row*
 			//------------------------------------------------------------------------------------------
 			//rowa = ((unsigned int)state[0]) & (nRows-1);	//(USE THIS IF nRows IS A POWER OF 2)
-			rowa = state[0] % uint64(nRows) //(USE THIS FOR THE "GENERIC" CASE)
+			rowa = state[0] & uint64(nRows - 1) //(USE THIS FOR THE "GENERIC" CASE)
 			//------------------------------------------------------------------------------------------
 
 			//Performs a reduced-round duplexing operation over M[row*] XOR M[prev], updating both M[row*] and M[row]
@@ -586,7 +586,7 @@ func lyra2(k []byte, pwd []byte, salt []byte, timeCost uint64, nRows int, nCols 
 			//updates row: goes to the next row to be computed
 			//------------------------------------------------------------------------------------------
 			//row = (row + step) & (nRows-1);	//(USE THIS IF nRows IS A POWER OF 2)
-			row = (row + step) % nRows //(USE THIS FOR THE "GENERIC" CASE)
+			row = (row + step) & (nRows - 1) //(USE THIS FOR THE "GENERIC" CASE)
 			//------------------------------------------------------------------------------------------
 		}
 	}
